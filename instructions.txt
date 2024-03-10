@@ -1,0 +1,5 @@
+npm init -y
+npx eslint --init
+npm i nodemon sucrase -D
+criar arquivo nodemon.json
+configurar comando
