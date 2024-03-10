@@ -23,18 +23,18 @@ export default class Aluno extends Model {
           },
         },
       },
-      email: {
-        type: Sequelize.STRING,
-        defaultValue: '',
-        unique: {
-          msg: 'Email já utilizado.',
-        },
-        validate: {
-          isEmail: {
-            msg: 'Email inválido.',
-          },
-        },
-      },
+      // email: {
+      //   type: Sequelize.STRING,
+      //   defaultValue: '',
+      //   unique: {
+      //     msg: 'Email já utilizado.',
+      //   },
+      //   validate: {
+      //     isEmail: {
+      //       msg: 'Email inválido.',
+      //     },
+      //   },
+      // },
       idade: {
         type: Sequelize.INTEGER,
         defaultValue: '',
@@ -44,24 +44,24 @@ export default class Aluno extends Model {
           },
         },
       },
-      peso: {
-        type: Sequelize.FLOAT,
-        defaultValue: '',
-        validate: {
-          isFloat: {
-            msg: 'Peso deve ser inteiro ou de ponto flutuante.',
-          },
-        },
-      },
-      altura: {
-        type: Sequelize.STRING,
-        defaultValue: '',
-        validate: {
-          isFloat: {
-            msg: 'Altura deve ser inteiro ou de ponto flutuante.',
-          },
-        },
-      },
+      // peso: {
+      //   type: Sequelize.FLOAT,
+      //   defaultValue: '',
+      //   validate: {
+      //     isFloat: {
+      //       msg: 'Peso deve ser inteiro ou de ponto flutuante.',
+      //     },
+      //   },
+      // },
+      // altura: {
+      //   type: Sequelize.STRING,
+      //   defaultValue: '',
+      //   validate: {
+      //     isFloat: {
+      //       msg: 'Altura deve ser inteiro ou de ponto flutuante.',
+      //     },
+      //   },
+      // },
     }, { sequelize });
     return this;
   }
