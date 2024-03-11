@@ -27,9 +27,9 @@ class App {
     this.app.use(express.json());
     this.app.use(express.static(resolve(__dirname, 'uploads')));
     this.app.use(cors({
-      // origin: '*',
+      origin: '*',
       // origin: ['http://localhost:5173'],
-      'Access-Control-Allow-Origin': '*',
+      // 'Access-Control-Allow-Origin': '*',
     }));
   }
 
